@@ -24,7 +24,7 @@ subobject-hybrid:
 
 subobject: subobject-purecap subobject-hybrid
 
-playground: hello subobject
+playground-hello: hello subobject
 
-clean:
+clean-hello:
 	@rm -f hello-purecap hello-hybrid subobject-purecap subobject-hybrid
