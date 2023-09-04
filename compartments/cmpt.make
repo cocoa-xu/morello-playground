@@ -16,3 +16,6 @@ hellolpb:
 	$(CC) $(PURECAP_CFLAGS) $(CFLAGS) $(hellolpb_src) -o hellolpb-purecap
 
 playground: hellolb hellolpb
+
+clean:
+	@rm -f hellolb-purecap hellolpb-purecap
