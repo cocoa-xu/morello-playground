@@ -4,7 +4,7 @@ override hello_this := $(lastword $(MAKEFILE_LIST))
 override hello_curdir := $(realpath $(dir $(hello_this)))
 
 override util_src := util/capprint.c util/morello.c
-override subobject_src := $(util_src) $(cmpt_curdir)/subobject.c
+override subobject_src := $(util_src) $(hello_curdir)/subobject.c
 
 SUBOBJECT_CFLAGS := $(CFLAGS) -Iutil -I$(cmpt_curdir)/include -cheri-bounds=subobject-safe
 
